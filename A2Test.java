@@ -83,8 +83,8 @@ public class A2Test
 
 		System.out.println("The letter \"r\" appeared " +
 			sentence.getFrequencyOf('r') + " time(s)");
-			System.out.println("The srting \"re\" appeared " +
-					sentence.getFrequencyOf('r', 'e') + " time(s)");
+		System.out.println("The srting \"re\" appeared " +
+				sentence.getFrequencyOf('r', 'e') + " time(s)");
 		System.out.println("The letters following 'r' are " + 
 						Arrays.toString(sentence.successors('r')));
 		System.out.println("The letters following 'j' are " + 

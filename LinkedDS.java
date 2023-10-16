@@ -164,7 +164,7 @@ public class LinkedDS<T> implements SequenceInterface<T> {
 		
 		Node current = array[indexInAlphabet(first)];
 		while(current!=null){
-			if(alphabet[current.item]==second)
+			if(alphabet[current.item].equals(second))
 				counter++;
 			current = current.next;
 		}
@@ -227,6 +227,9 @@ public class LinkedDS<T> implements SequenceInterface<T> {
     private static class Node {
         private int item; //index in alphabet of item
         private Node next; // the reference to the next node
+		//int size = 1 ---> if null otherwise prevHead.size+1
+		// Node newHead = new Node(item, prevhead, prevHead.size+1)
+		// otherwise for the first one Node newHead = new Node(item);
     
         private Node(int item){
             this.item = item;
